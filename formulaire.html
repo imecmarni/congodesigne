@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+  width: 300px;
+  margin: 20px auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+body{
+    background-image: url(IMAGE/f.jpg);
+}
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  nav ul {
+    list-style: none;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 20px;
+    background-color: black;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+    </style>
+</head>
+<h1><b>Bienvenue dans la partie formulaire nous somme disposé à répondre  toutes vos questions </b></h1>
+        <nav>
+          <ul>
+            <li ><a href="page d'accueil.html"><b>Accueil</b></a></li>
+            <li ><a href="contacte.html"><b>contacte </b></a></li>
+            <li ><a href="formulaire.html"><b>Formulaire de contacte</b></a></li>
+            
+          </ul>
+        </nav>
+      </header>
+<body>
+    <form action="/envoyer-message" method="POST">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required><br>
+      
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required><br>
+      
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" required></textarea><br>
+      
+        <input type="submit" value="Envoyer">
+      </form>  
+</body>
+</html>
